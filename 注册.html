@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://v3.bootcss.com/examples/theme/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="http://v3.bootcss.com/favicon.ico">
+
+<title>注册</title>
+
+<!-- Bootstrap core CSS -->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap theme -->
+<link href="./css/bootstrap-theme.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="./css/theme.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="./css/navbar.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="./css/signin.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="./js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="./js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="./js/html5shiv.min.js"></script>
+<script src="./js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body role="document"> <!-- page main body start -->
+<div class="container">
+
+<!-- Static navbar -->
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">山东理工大学ACM</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">山东理工大学ACM</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">主页</a></li>
+            <li><a href="Online Judge.html">Online Judge</a></li>
+			<li><a href="http://acm.sdut.edu.cn:8080/vjudge/problem/toListProblem.action">Virtual Judge</a></li>
+			<li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contest<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://acm.sdut.edu.cn/recentcontest.html">Recent Contest</a></li>
+                <li><a href="http://acm.sdut.edu.cn/acmxs/acm5game/">ACM校赛</a></li>
+                <li><a href="http://acm.sdut.edu.cn/sd2012/">ACM省赛</a></li>
+              </ul>
+            </li>
+			<li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Plan<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://stepbystep.sdutacm.org/">训练计划</a></li>
+                <li><a href="http://stepbystep.sdutacm.org/statistics_alll">做题统计</a></li>
+              </ul>
+            </li>
+			<li><a href="http://acm.sdut.edu.cn/bbs">ACM论坛</a></li>
+			<li><a href="http://sdutacm.diandian.com/">ACM协会</a></li>
+          </ul>
+				<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="./登陆.html">登陆<span class="sr-only">(current)</span></a></li>
+				<li><a href="./注册.html">注册</a></li>
+				</ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+<div class="container">
+<div class="container theme-showcase" role="main">
+<div class="row row-offcanvas row-offcanvas-right">
+<p>
+<div class="well">
+<h2 align="center">欢迎加入我们!</h2>
+</div>
+</p>
+<div class="alert alert-success" role="alert">
+<div style="width:50%;margin-left:25%;margin-right:25%;">
+<h2>必填信息</h2>
+<hr>
+<label for="username" class="control-label">用户名</label>
+<input type="text" class="form-control" style = "width:100%" id="username" placeholder="用户名为本站的账号，为3-20个字母、数字、下划线">
+<label for="nickname" class="control-label">昵称</label>
+<input type="text" class="form-control" style = "width:100%" id="nickname" placeholder="昵称为本站与账号关联的名字，为3-20个字母、数字、下划线和中文，建议使用真名">
+<label for="password" class="control-label">密码</label>
+<input type="password" class="form-control" style = "width:100%" id="password" placeholder="密码不允许有非法字符，不能以数字开头，且长度在6-20个字符之间">
+<label for="password" class="control-label">再次输入密码</label>
+<input type="password" class="form-control" style = "width:100%" id="password_confirm" placeholder="重新输入您的密码">
+<label for="email" class="control-label">Email</label>
+<input type="email" class="form-control" style = "width:100%" id="email" placeholder="填写正确的邮箱地址，以便接受重要的通知">
+<label for="school" class="control-label">学校</label>
+<input type="text" class="form-control" style = "width:100%" id="school" placeholder="请正确填写学校名字（填写后不能修改！）">
+<label for="college" class="control-label">学院</label>
+<font class="bg-primary">请正确填写你的学院（填写后不能修改！）</font>
+<select name="User[college]" id="college" onchange="user_user_add_user_academyRedirect(this.options.selectedIndex)" class="form-control" style = "width:100%">
+<option value="adademy">选择你的学院....</option>
+<option value="理学院">理学院</option>
+<option value="农工学院">农工学院</option>
+<option value="交通学院">交通学院</option>
+<option value="化学工程学院">化学工程学院</option>
+<option value="国防教育学院">国防教育学院</option>
+<option value="机械工程学院">机械工程学院</option>
+<option value="经济学院">经济学院</option>
+<option value="生命科学学院">生命科学学院</option>
+<option value="管理学院">管理学院</option>
+<option value="计算机学院">计算机学院</option>
+<option value="电气学院">电气学院</option>
+<option value="资环学院">资环学院</option>
+<option value="建筑工程学院">建筑工程学院</option>
+<option value="材料学院">材料学院</option>
+<option value="法学院">法学院</option>
+<option value="文学院">文学院</option>
+<option value="外国语学院">外国语学院</option>
+<option value="商学院">商学院</option>
+<option value="美术学院">美术学院</option>
+<option value="音乐学院">音乐学院</option>
+<option value="体育学院">体育学院</option>
+<option value="鲁泰学院">鲁泰学院</option>
+</select>
+<label for="major" class="control-label">专业</label>
+<font class="bg-primary">请正确填写你的专业（填写后不能修改！）</font>
+<select id="first-disabled"  class="form-control" style = "width:100%" data-hide-disabled="true" data-live-search="true">
+</optgroup>
+<optgroup label="理学院">
+<option>数学与应用数学</option>
+<option>信息与计算科学</option>
+<option>统计学</option>
+<option>物理学</option>
+<option>光信息科学与技术</option>
+<option>软件技术(中美合作)</option>
+<option>数学教育</option>
+<option>数学与应用数学(师范)</option>
+<option>物理学(师范)</option>
+<option>信息技术应用(中新合作)</option>
+</optgroup>
+<optgroup label="农工学院">
+<option>食品科学与工程</option>
+<option>工业设计</option>
+<option>农业机械化与自动化</option>
+</optgroup>
+<optgroup label="交通学院">
+<option>车辆工程</option>
+<option>交通运输</option>
+<option>交通工程</option>
+<option>热能与动力工程</option>
+</optgroup>
+<optgroup label="化学工程学院">
+<option>化学</option>
+<option>化学工程与工艺</option>
+<option>应用化学</option>
+<option>化学(师范)</option>
+<option>冶金工程</option>
+</optgroup>
+<optgroup label="国防教育学院">
+</optgroup>
+<optgroup label="机械工程学院">
+<option>机械设计制造及其自动化</option>
+<option>材料成型及控制工程</option>
+<option>测控技术与仪器</option>
+<option>机械电子工程</option>
+<option>机械类创新实验班</option>
+<option>机械设计制造及其自动化(卓越班)</option>
+</optgroup>
+<optgroup label="经济学院">
+<option>国际经济与贸易</option>
+<option>金融学</option>
+<option>经济学</option>
+<option>国际商务(中新合作)</option>
+<option>经济类创新实验班</option>
+</optgroup>
+<optgroup label="生命科学学院">
+<option>生物工程</option>
+<option>生物科学</option>
+<option>生物技术</option>
+</optgroup>
+<optgroup label="管理学院">
+<option>会计学</option>
+<option>工商管理</option>
+<option>工业工程</option>
+<option>市场营销</option>
+<option>信息管理与信息系统</option>
+<option>会计学(中美合作)</option>
+<option>会计与审计</option>
+<option>商务管理(中英合作)</option>
+</optgroup>
+<optgroup label="计算机学院">
+<option>计算机科学与技术</option>
+<option>通信工程</option>
+<option>教育技术学</option>
+<option>数字媒体技术</option>
+<option>计算机应用技术(中韩合作)</option>
+<option>信息技术应用(中新合作)</option>
+<option>软件工程</option>
+<option>计算机科学与技术(卓越)</option>
+<option>计算机科学与技术(与惠普合作)</option>
+<option>计算机科学与技术(中爱合作办学)</option>
+<option>软件工程(说明:与惠普合作培养软件开发)</option>
+<option>软件工程(软件外包方向)</option>
+</optgroup>
+<optgroup label="电气学院">
+<option>电气工程及其自动化</option>
+<option>自动化</option>
+<option>电子信息工程</option>
+<option>电子信息科学与技术</option>
+<option>电子信息科学与技术(校企合作)</option>
+</optgroup>
+<optgroup label="资环学院">
+<option>环境工程</option>
+<option>矿物资源工程</option>
+<option>资源环境与城乡规划管理</option>
+<option>采矿工程</option>
+<option>矿物加工工程</option>
+<option>勘探技术与工程</option>
+<option>采矿工程(卓越班)</option>
+<option>资源循环科学与工程</option>
+</optgroup>
+<optgroup label="建筑工程学院">
+<option>测绘工程</option>
+<option>土木工程</option>
+<option>城市规划</option>
+<option>工程管理</option>
+</optgroup>
+<optgroup label="材料学院">
+<option>材料科学与工程</option>
+<option>材料化学</option>
+<option>高分子材料与工程</option>
+</optgroup>
+<optgroup label="法学院">
+<option>法学</option>
+<option>政治学与行政学</option>
+<option>社会工作</option>
+<option>行政管理</option>
+<option>法学(律师班)</option>
+</optgroup>
+<optgroup label="文学院">
+<option>汉语言文学</option>
+<option>汉语言文学(师范)</option>
+<option>广告学</option>
+</optgroup>
+<optgroup label="外国语学院">
+<option>英语</option>
+<option>英语(师范)</option>
+<option>日语</option>
+<option>朝鲜语</option>
+</optgroup>
+<optgroup label="商学院">
+<option>经济学</option>
+<option>国际经济与贸易</option>
+<option>金融学</option>
+<option>经济类创新实验班</option>
+<option>信息管理与信息系统</option>
+<option>会计学</option>
+<option>工业工程</option>
+<option>工商管理</option>
+<option>市场营销</option>
+</optgroup>
+<optgroup label="美术学院">
+<option>美术学</option>
+<option>艺术设计</option>
+</optgroup>
+<optgroup label="音乐学院">
+<option>音乐学</option>
+<option>音乐表演</option>
+</optgroup>
+<optgroup label="体育学院">
+<option>体育教育</option>
+<option>运动训练</option>
+</optgroup>
+<optgroup label="鲁泰学院">
+<option>服装设计与工程(卓越班)</option>
+<option>纺织工程</option>
+</optgroup>
+</select>
+<label for="grade" class="control-label">年级</label>
+<input type="text" class="form-control" style = "width:100%" id="grade" placeholder="请正确填写你的年级：例如：2013（填写后不能修改！）">
+<label for="class" class="control-label">班级</label>
+<input type="text" class="form-control" style = "width:100%" id="class" placeholder="请正确填写你的班级示例：例如:计科0901，信科0802（重要！填写后不能修改！）">
+<h2>选填信息</h2>
+<hr>
+<label for="qq" class="control-label">性别</label><br>
+<label class="radio-inline">
+<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> 男
+</label>
+<label class="radio-inline">
+<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 女
+</label>
+<p></p>
+<label for="qq" class="control-label">QQ</label>
+<input type="text" class="form-control" style = "width:100%" id="qq" placeholder="请填写正确的QQ">
+<label for="adress" class="control-label">地址</label>
+<input type="text" class="form-control" style = "width:100%" id="adress" placeholder="请填写正确的地址">
+<label for="birthday" class="control-label">生日</label>
+<input type="text" class="form-control" style = "width:100%" id="birthday" placeholder="请填写正确的生日">
+<label for="tel" class="control-label">电话</label>
+<input type="text" class="form-control" style = "width:100%" id="tel" placeholder="请填写正确的联系方式">
+<label for="language" class="control-label">喜好的编程语言</label>
+<font class="bg-primary">提交代码时的默认语言.</font>
+<select name="User[pro_lang]" id="User[pro_lang]"  size="1"  class="form-control" style = "width:100%"><option value="gcc" selected>gcc</option>
+<option value="g++" >g++</option>
+<option value="java" >java</option>
+<option value="pascal" >pascal</option>
+<option value="go" >go</option>
+<option value="lua" >lua</option>
+<option value="dao" >dao</option>
+<option value="perl" >perl</option>
+<option value="ruby" >ruby</option>
+<option value="haskell" >haskell</option>
+<option value="python2" >python2</option>
+<option value="python3" >python3</option>
+</select>
+<hr>
+<p>
+<button type="submit" name="submit" value="搜索" class="btn btn-sm btn-success">注册</button>
+<button name="" type="reset"  value="重置" class="btn btn-sm btn-success">重置</button>
+</p>
+<hr>
+</div>
+</div><!--/.col-xs-12.col-sm-9-->
+</div>
+<hr>
+<div class="container theme-showcase" role="main">
+<footer class="footer" align="center">
+<p>Copyright &copy; 2015 SDUT <a href="http://211.64.20.211">CIL</a>. All Rights Reserved.</p>
+<p>Powered by <a href="https://github.com/twbs/bootstrap">Bootstrap.</a></p>
+</footer>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/docs.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="./js/ie10-viewport-bug-workaround.js"></script>
+</div>
+</div>
+</body><!-- page main body end -->
+</html>

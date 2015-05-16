@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://v3.bootcss.com/examples/theme/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="http://v3.bootcss.com/favicon.ico">
+
+	<title>Frequently Asked Questions</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+	<link href="./css/bootstrap-theme.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="./css/theme.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="./css/navbar.css" rel="stylesheet">
+
+	
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+	<!--[if lt IE 9]><script src="./js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<script src="./js/ie-emulation-modes-warning.js"></script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="./js/html5shiv.min.js"></script>
+	  <script src="./js/respond.min.js"></script>
+	<![endif]-->
+  </head>
+
+  <body role="document"> <!-- page main body start -->
+	<div class="container">
+
+	  <!-- Static navbar -->
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">山东理工大学ACM</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">山东理工大学ACM</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">主页</a></li>
+            <li><a href="Online Judge.html">Online Judge</a></li>
+			<li><a href="http://acm.sdut.edu.cn:8080/vjudge/problem/toListProblem.action">Virtual Judge</a></li>
+			<li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contest<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://acm.sdut.edu.cn/recentcontest.html">Recent Contest</a></li>
+                <li><a href="http://acm.sdut.edu.cn/acmxs/acm5game/">ACM校赛</a></li>
+                <li><a href="http://acm.sdut.edu.cn/sd2012/">ACM省赛</a></li>
+              </ul>
+            </li>
+			<li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Plan<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://stepbystep.sdutacm.org/">训练计划</a></li>
+                <li><a href="http://stepbystep.sdutacm.org/statistics_alll">做题统计</a></li>
+              </ul>
+            </li>
+			<li><a href="http://acm.sdut.edu.cn/bbs">ACM论坛</a></li>
+			<li><a href="http://sdutacm.diandian.com/">ACM协会</a></li>
+          </ul>
+				<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="./登陆.html">登陆<span class="sr-only">(current)</span></a></li>
+				<li><a href="./注册.html">注册</a></li>
+				</ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+		<div class="container">
+		<div class="container theme-showcase" role="main">
+		<div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+		<p>
+		<div class="jumbotron">
+            <h1 align="center">Frequently Asked Questions</h1>
+		</div>
+		</p>
+		<p>
+		<div class="well">
+		<h5><span class="label label-default">root</span></h5>
+		<h5><span class="label label-default">2013-04-01 20:04:44</span></h5>
+		<p><h2><font color="blue">我的程序要在哪里输入和输出数据？</font></h2></p>
+		<p><h3>你的程序必须从stdin（基本输入）读入数据并且从stdout（基本输出）输出数据。例如，你使用C语言的话，使用scanf读入数据，使用printf输出数据，你使用C++语言的话，还可以使用cin和cout读入和输出数据。</h3></p>
+		<p><font color="red"><b>注意：你提交的程序不能进行任何文件的读写操作，否则会返回“Wrong Answer”。</b></font></p>
+		<p><h2><font color="blue">本OJ提供哪些编译器？编译环境是怎么样的？</font></h2></p>
+		<p><h3>本OJ目前提供多种语言编译器,它们的编译参数分别是：</h3></p>
+		<p>
+		<div class="col-sm-12">
+          <ul class="list-group">
+            <li class="list-group-item">gcc : gcc main.c -o main -Wall -lm -O2 -std=c99 --static -DONLINE_JUDGE</li>
+            <li class="list-group-item">g++ : g++ main.cpp -O2 -Wall -lm --static -DONLINE_JUDGE -o main</li>
+            <li class="list-group-item">java : javac Main.java</li>
+            <li class="list-group-item">ruby : reek main.rb</li>
+            <li class="list-group-item">perl : perl -c main.pl</li>
+			<li class="list-group-item">pascal : fpc main.pas -O2 -Co -Ct -Ci</li>
+			<li class="list-group-item">go : go build -ldflags "-s -w" main.go</li>
+			<li class="list-group-item">lua : luac -o main main.lua</li>
+			<li class="list-group-item">python2 : python2 -m py_compile main.py</li>
+			<li class="list-group-item">python3 : python3 -m py_compile main.py</li>
+			<li class="list-group-item">haskell : ghc -o main main.hs</li>
+          </ul>
+        </div><!-- /.col-sm-4 -->
+		</p>
+		<p><h3>目前服务器运行在Linux平台下，提供的编译器的版本分别是：</h3></p>
+		<p>
+		<div class="col-sm-12">
+          <ul class="list-group">
+            <li class="list-group-item">gcc     4.4.5</li>
+            <li class="list-group-item">g++     4.4.5</li>
+            <li class="list-group-item">java    1.6.2</li>
+            <li class="list-group-item">pascal  2.4.0</li>
+            <li class="list-group-item">ruby    2.0</li>
+			<li class="list-group-item">lua     5.1.4</li>
+			<li class="list-group-item">perl    5.10</li>
+			<li class="list-group-item">python2 2.7.3</li>
+			<li class="list-group-item">python3 3.3.0</li>
+			<li class="list-group-item">go      1.0</li>
+			<li class="list-group-item">ghc     7.6.2</li>
+          </ul>
+        </div><!-- /.col-sm-4 -->
+		</p>
+		<p><h2><font color="blue">为什么我提交的程序在OJ运行得到了Compile Error？而在我的电脑上运行得很好？</font></h2></p>
+		<p><h3>不同的编译器之间有一些语法的差异，如果你电脑上使用的编译器与本OJ提供的编译器不同，请注意它们之间的差异，提交时请使用相应的编译器进行提交。</h3></p>
+		<p><h2><font color="blue">不同编程语言的时间是怎么限制的？</font></h2></p>
+		<p><h3>假设某个题目的标准时间限制是1000毫秒，内存限制是65536k，那么C、C++、go、haskell、lua、pascal时间和内存限制就是1000毫秒和65536k，其他语言：java、python2、python3、ruby、perl的时间和内存限制都相应放宽，是标准时间和内存的2倍，即时间限制是2000毫秒，内存限制是2*65536K</h3></p>
+		<p><h2><font color="blue">我要怎么使用64-bit整型？</font></h2></p>
+		<p><h3><p><font class="label label-danger">C/C++</font> 评测程序只支持<font class="label label-danger">long long</font>，不支持<font class="label label-danger">int64</font></p>
+		<p>有符号64-bit整型，取值范围为：<font class="label label-danger">-9223372036854775808</font> 到 <font class="label label-danger">9223372036854775807</font>。</p>
+		<p>无符号64-bit整型，取值范围为：<font class="label label-danger">0</font> 到 <font class="label label-danger">18446744073709551615</font>。</p></h3></p>
+		<p><h2><font color="blue">OJ返回的结果分别是什么意思？</font></h2></p>
+		<p><h3>以下是OJ可能返回的结果和其意义：</h3></p>
+		<p>
+		<div class="col-sm-12">
+          <ul class="list-group">
+            <li class="list-group-item"><font class="label label-danger">Accepted</font>恭喜！ 你的程序是正确的。</li>
+            <li class="list-group-item"><font class="label label-danger">Presentation Error</font>你的程序输出时表达错误，如果看到这样的结果，说明你的程序已经基本正确了，只是多或少打了换行符或者多或少输出了空格，检查一下你的程序和题目要求吧，胜利就在眼前！</li>
+            <li class="list-group-item"><font class="label label-danger">Wrong Answer</font>你的程序输出的结果不正确。</li>
+            <li class="list-group-item"><font class="label label-danger">Time Limit Exceeded</font>你的程序尝试使用超过题目限制的时间，可能是你的程序内存在死循环或者你的程序的算法效率太低。</li>
+            <li class="list-group-item"><font class="label label-danger">Memory Limit Exceeded</font>你的程序尝试使用超过题目限制的内存。</li>
+			<li class="list-group-item"><font class="label label-danger">Runtime Error</font>你的程序发生了运行时错误。可能是由于除以0、数组越界或指针访问出错等运行时问题。</li>
+			<li class="list-group-item"><font class="label label-danger">Compile Error</font>你的程序不能通过编译，请点击该结果可以查看编译器提示。</li>
+			<li class="list-group-item"><font class="label label-danger">Output Limit Exceeded</font>你的程序的输出过多。请检查你的程序是否存在死循环问题。</li>
+			<li class="list-group-item"><font class="label label-danger">Waiting</font>你的程序正在评测中，请稍候。</li>
+          </ul>
+        </div><!-- /.col-sm-4 -->
+		</p>
+		<p><h2><font color="blue">第1000号题目怎么解答？</font></h2></p>
+		<p><h3>以下是第1000号题目的各种语言的参考程序：</h3></p>
+		<div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">C语言</h3>
+            </div>
+            <div class="panel-body">
+				<p>#include &lt;stdio.h&gt;</p>
+				<p>int main()</p>
+				<p>{</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;int a,b;</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d%d",&a,&b);</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;printf("%d\n",a+b);</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
+				<p>}</p>
+            </div>
+          </div>
+		  <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">C++</h3>
+            </div>
+            <div class="panel-body">
+				<p>#include &lt;iostream&gt;</p>
+				<p>using namespace std;</p>
+				<p>int main()</p>
+				<p>{</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;int a,b;</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;cin>>a>>b;</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp; cout << a+b << endl;</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
+				<p>}</p>
+            </div>
+          </div>
+		  <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">PASCAL</h3>
+            </div>
+            <div class="panel-body">
+				<p>var</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;a,b:integer;</p>
+				<p>begin</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;readln(a,b);</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;writeln(a+b);</p>
+				<p>end.</p>
+            </div>
+          </div>
+		  <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">Java</h3>
+            </div>
+            <div class="panel-body">
+				<p>import java.io.*;</p>
+				<p>import java.util.*;</p>
+				<p>public class Main</p>
+				<p>{</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args)</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;{</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scanner cin = new Scanner ( System.in );</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int a,b;</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a=cin.nextInt();</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b=cin.nextInt();</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a+b);</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+				<p>}</p>
+            </div>
+          </div>
+		  <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">haskell</h3>
+            </div>
+            <div class="panel-body">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;main = getLine >>= print . sum . map read . words</p>
+            </div>
+          </div>
+		  <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">go</h3>
+            </div>
+            <div class="panel-body">
+				<p>package main</p>
+				<p>import "fmt"</p>  
+				<p>func main(){  </p>    
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;var a,b int      </p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;fmt.Scanf("%d %d", &a,&b)  </p>    
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;fmt.Printf("%d", a+b)     </p> 
+				<p>}</p>
+            </div>
+          </div>
+		  <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">lua</h3>
+            </div>
+            <div class="panel-body">
+				<p>a,b = io.read("*number", "*number")</p>
+				<p>print(a+b)</p>
+            </div>
+          </div>
+		  <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">perl</h3>
+            </div>
+            <div class="panel-body">
+				<p>my ($a,$b) = split(/\D+/,);</p>
+				<p>print "$a $b " . ($a + $b) . "\n";</p>
+            </div>
+          </div>
+		  <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">ruby</h3>
+            </div>
+            <div class="panel-body">
+				<p>puts gets.split.map(&:to_i).inject(&:+)</p>
+            </div>
+          </div>
+		  <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">python2</h3>
+            </div>
+            <div class="panel-body">
+				<p>print sum(int(x) for x in raw_input().split())</p>
+            </div>
+          </div>
+		  <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">python3</h3>
+            </div>
+            <div class="panel-body">
+				<p>print(sum(int(x) for x in input().split()))</p>
+            </div>
+          </div>
+		</div>
+		</p>
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">个人资料</h3>
+            </div>
+			<div class="panel-body">
+              <div class="item">
+            <img src="./images/QQ.jpg" alt="100*100">
+          </div>
+            </div>
+            <div class="panel-body">
+              <span class="label label-success">Nickname</span> <!-- This span write Nickname -->
+			  <span class="label label-success">Username</span> <!-- This span write Username -->
+            </div>
+			<div class="panel-body">
+              <span class="label label-success">College</span> <!-- This span write College -->
+			  <span class="label label-success">Major</span> <!-- This span write Major -->
+            </div>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+		<hr>
+		<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <a class="list-group-item active">
+              个人操作
+            </a>
+            <a href="./公告.html" class="list-group-item">查看公告</a>
+            <a href="./练习.html" class="list-group-item">练习</a>
+            <a href="./比赛.html" class="list-group-item">比赛</a>
+			<a href="./收件箱.html" class="list-group-item">查看收件箱</a>
+			<a href="./个人设置.html" class="list-group-item">设置</a>
+            <a href="./" class="list-group-item">注销</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+		<hr>
+		<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <a class="list-group-item active">
+              题库
+            </a>
+            <a href="./练习.html" class="list-group-item">题目列表</a>
+            <a href="./排名.html" class="list-group-item">排名</a>
+            <a href="./状态.html" class="list-group-item">状态</a>
+			<a href="" class="list-group-item">讨论</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+		<hr>
+		<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <a class="list-group-item active">
+              相关链接
+            </a>
+            <a href="http://acm.sdut.edu.cn" class="list-group-item">山东理工ACM</a>
+            <a href="http://acm.hdu.edu.cn/" class="list-group-item">杭电ACM</a>
+            <a href="http://poj.org/" class="list-group-item">PKUOJ</a>
+			<a href="http://bailian.openjudge.cn/" class="list-group-item">PKU百炼</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+		</div>
+		<hr>
+		<div class="container theme-showcase" role="main">
+		<footer class="footer" align="center">
+		<p>Copyright &copy; 2015 SDUT <a href="http://211.64.20.211">CIL</a>. All Rights Reserved.</p>
+		<p>Powered by <a href="https://github.com/twbs/bootstrap">Bootstrap.</a></p>
+		</footer>
+		</div>
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/docs.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="./js/ie10-viewport-bug-workaround.js"></script>
+	</div>
+	</div>
+</body><!-- page main body end -->
+</html>
